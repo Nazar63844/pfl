@@ -457,29 +457,7 @@ in the simplest way</i>
     </div>        
   </div>
   <div class="w3-col m8">   
-		<div id="map" class="w3-image w3-greyscale w3-paddin" style="width:100%;height:340pt"></div>
-<script>
-function myMap() {
-  var amsterdam = new google.maps.LatLng(47.917153,33.398916);
-
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {center: amsterdam, zoom: 7};
-  var map = new google.maps.Map(mapCanvas,mapOptions);
-
-  var myCity = new google.maps.Circle({
-    center: amsterdam,
-    radius: 100000,
-    strokeColor: "#000000",
-    strokeOpacity: 0.8,
-    strokeWeight: 2,
-    fillColor: "#000000",
-    mapTypeId: "satellite", // Устанавливаем вид со спутника
-    fillOpacity: 0.2
-  });
-  myCity.setMap(map);
-}
-</script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHCIS6ZJuYHpYQraAEPtsQZtEgVOc_NJE&callback=myMap"></script> 
+		<img src="map.png" class="w3-image w3-greyscale" style="width:100%;">
   </div>   
   <!-- End Contact Section -->
   </div>  
