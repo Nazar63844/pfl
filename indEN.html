@@ -1,0 +1,512 @@
+<!DOCTYPE html><html><title>Portfolio</title><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
+<!--<link rel="stylesheet" href="w3m.css">
+<link rel="stylesheet" href="font-awesome.min.css">-->
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family:sans-serif}               
+.w3-bar,h1,button {font-family:"Montserrat",sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #333, transparent);
+}
+</style>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <nav class="w3-flex w3-large w3-olive">    
+    <a href="#" class="w3-button w3-hover-none w3-hide-small" title="Artist's Portfolio">Home</a>  
+
+<div class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style="display:none" id="mySidebar">
+  <button title="&#10094; Remove with a click" class="w3-bar-item w3-button w3-large w3-blue-grey" 
+  onclick="w3_close()">&#8592; Hide menu&nbsp;&nbsp;&nbsp;&nbsp;</button>               
+<a href="#one" class="w3-bar-item w3-button">The Gravity of Humanity</a>
+<a href="#two" class="w3-bar-item w3-button">Between Laughter and Silence</a>
+<a href="#three" class="w3-bar-item w3-button">Holding On</a>
+<a href="#fore" class="w3-bar-item w3-button">Waiting</a>
+<a href="#five" class="w3-bar-item w3-button">A Donkey in an Armchair</a>
+<a href="#six" class="w3-bar-item w3-button">Despair</a>
+<a href="#seven" class="w3-bar-item w3-button">Vacuum</a>
+<a href="#eiht" class="w3-bar-item w3-button">Shelter</a>
+<a href="#nine" class="w3-bar-item w3-button">A Dappled Donkey</a>
+<a href="#ten" class="w3-bar-item w3-button">Checkmate</a>
+<a href="#ten1" class="w3-bar-item w3-button">Those Who Did Not Submit</a>
+<a href="#ten2" class="w3-bar-item w3-button">Three Not...</a>
+
+</div>
+<button class="w3-button w3-olive w3-hover-none" onclick="w3_open()">My Paintings</button>      
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+    <a href="#about" class="w3-button w3-hide-small w3-hover-none">About me</a>          
+    <a href="#contact" class="w3-button w3-hide-small w3-hover-none">Contacts</a>        
+	 <a href="#" _target="self" onclick="openEN()" class="w3-bar-item w3-hover-olive w3-hover-text-black w3-button ">
+	 	<img src="ua.svg" title="UA" style="width:24px"/>	
+	 </a>   
+    
+    <button
+    class="w3-button w3-hide-medium w3-hide-large w3-hover-olive w3-hover-text-black"
+    style="margin-left:auto"
+    onclick="myFunction()"
+    title="Меню">
+      <span style='font-size:20px;'>&#9776;</span>    
+    </button>   
+  </nav>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-large" >
+    <a href="#" class="w3-bar-item w3-olive w3-hover-olive w3-hover-text-black w3-button w3-padding-large">Home</a>
+    <a href="#about" class="w3-bar-item w3-olive w3-hover-olive w3-hover-text-black w3-button w3-padding-large">About me</a>
+    <a href="#contact" class="w3-bar-item w3-olive w3-hover-olive w3-hover-text-black w3-button w3-padding-large">Contacts</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-olive w3-center" style="padding:128px 0px">              
+<h1 class="w3-xxlarge" style="font-family:sans-serif,Arial">VALENTYNA NAZARENKO</h1>   
+        <img src="pr1.webp" style="width:30%" class="w3-padding w3-circle w3-greyscale">     
+  <p class="w3-xxlarge">ValyaAcorn</p>
+    <p class="w3-large">Painting – figurativeness – social and psychological metaphor</p>
+</header>
+<!-- First Section -->
+<section class="w3-container w3-padding-64" id="one">
+  <div class="w3-content w3-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;align-items:center">
+    <div>
+<h1>The Gravity of Humanity</h1>
+<h5 class="w3-padding-32">2026<br>oil on canvas<br>90x100</h5>
+<p class="w3-text-grey">
+Gravity is that which draws people together, compelling them to influence one another.<br>Billions of people live side by side, their lives, thoughts, and actions touching one another.<br>We are drawn together and pushed apart; we seek freedom while remaining dependent on others. In this painting, human bodies
+form the Earth—a fragile sphere held together not by physical laws, but by the invisible bonds between people.<br>It is a story about a world
+in which there are no isolated victories or defeats—only the shared destiny of humanity. 
+</p>
+    </div>
+    <div class="w3-center w3-card-4">
+<img src="6.jpeg" style="width:100%;cursor:zoom-in" onclick="document.getElementById('modal01').style.display='block'">
+
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-white w3-container w3-padding-16 w3-display-topright">&nbsp;X&nbsp;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img src="6.jpeg" style="width:100%">
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+	<hr class="w3-opacity">
+<!-- Second Section клоун-->
+<section class="w3-container w3-padding-64" id="two">
+  <div class="w3-content w3-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;align-items:center">
+     <div class="w3-center w3-card-4">
+<img src="3.jpeg" style="width:100%;cursor:zoom-in" onclick="document.getElementById('modal02').style.display='block'">
+
+<div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-white w3-container w3-padding-16 w3-display-topright">&nbsp;X&nbsp;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img src="3.jpeg" style="width:100%">
+  </div>
+</div>
+    </div>
+    <div>
+<h1>Between Laughter and Silence</h1>
+<h5 class="w3-padding-32">2026<br>oil on canvas<br>90x70</h5>
+<p class="w3-text-grey">
+The figure of a clown reveals the contradiction between one’s outward performance and inner state.<br>Bright clothing and a tie
+contrast with a dejected posture. It is an image of solitude behind a mask of merriment—a moment when the laughter fades, leaving one face-to-face
+with oneself.<br>The painting explores the boundary between the role a person presents to the world and the feelings they conceal behind it. 
+</p>
+    </div>
+</section>
+	<hr class="w3-opacity">
+<!-- 3 Section -->
+<section class="w3-container w3-padding-64" id="three">
+  <div class="w3-content w3-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;align-items:center">
+    <div>
+<h1>Holding On</h1>
+<h5 class="w3-padding-32">2026<br>oil on canvas<br>80x60</h5>
+<p class="w3-text-grey">
+A painting about the inner struggle of a person who, despite pain and vulnerability, strives to hold herself together. By embracing her own body,
+the figure seems to seek support within herself.<br>It is an image of quiet strength, solitude, and the capacity to hold on—even when
+it feels as though there is no strength left. 
+</p>
+    </div>
+    <div class="w3-center w3-card-4">
+<img src="4.jpeg" style="width:100%;cursor:zoom-in" onclick="document.getElementById('modal03').style.display='block'">
+
+<div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-white w3-container w3-padding-16 w3-display-topright">&nbsp;X&nbsp;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img src="4.jpeg" style="width:100%">
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+	<hr class="w3-opacity">
+<!-- 4 Section -->
+<section class="w3-container w3-padding-64" id="fore">  
+  <div class="w3-content w3-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;align-items:center">   
+     <div class="w3-center w3-card-4">
+<img src="2.webp" style="width:100%;cursor:zoom-in" onclick="document.getElementById('modal04').style.display='block'">
+
+<div id="modal04" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-white w3-container w3-padding-16 w3-display-topright">&nbsp;X&nbsp;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img src="2.webp" style="width:100%">
+  </div>
+</div>
+    </div>      
+    <div>
+<h1>Waiting</h1>
+<h5 class="w3-padding-32">2025<br>oil on canvas<br>80x100</h5>
+<p class="w3-text-grey">
+The subject of this painting breathes melancholy and solitude, yet also a certain resilience.<br>Despite her fatigue,
+the young woman continues to keep count—meaning she has not lost hope and believes that this period of waiting will eventually come to an end.
+</p>
+    </div>
+  </div>
+</section>
+	<hr class="w3-opacity">
+<!-- 5 Section -->
+<section class="w3-container w3-padding-64" id="five">
+  <div class="w3-content w3-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;align-items:center">
+    <div>
+<h1>Donkey in an Armchair</h1>
+<h5 class="w3-padding-32">2026<br>oil on canvas<br>90×70</h5>
+<p class="w3-text-grey">
+This painting is about human stubbornness—about the desire to occupy someone else’s place, a spot that does not belong to you, while stubbornly refusing to acknowledge that it isn’t yours and that you are out of place here.
+</p>
+    </div>
+    <div class="w3-center w3-card-4">
+<img src="5.webp" style="width:100%;cursor:zoom-in" onclick="document.getElementById('modal05').style.display='block'">
+
+<div id="modal05" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-white w3-container w3-padding-16 w3-display-topright">&nbsp;X&nbsp;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img src="5.webp" style="width:100%">
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+	<hr class="w3-opacity">
+
+<!-- 6 Section -->
+<section class="w3-container w3-padding-64" id="six">  
+  <div class="w3-content w3-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;align-items:center">   
+      <div class="w3-center w3-card-4">
+<img src="8.webp" style="width:100%;cursor:zoom-in" onclick="document.getElementById('modal06').style.display='block'">
+
+<div id="modal06" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-white w3-container w3-padding-16 w3-display-topright">&nbsp;X&nbsp;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img src="8.webp" style="width:100%">
+  </div>
+</div>
+    </div>   
+    <div>
+<h1>Despair</h1>
+<h5 class="w3-padding-32">2025<br>oil on canvas<br>70x100</h5>
+<p class="w3-text-grey">
+A painting about intense emotions.<br>Sometimes, when we try to convey our thoughts and feelings to those around us,
+it feels as though our words simply vanish into thin air.<br>They fail to reach their destination, leaving us in despair. Yet, despite all
+the bitterness and despair, a cry into the void can become a powerful catalyst for change.
+</p>
+    </div>
+  </div>
+</section>
+	<hr class="w3-opacity">
+<!-- 7 Section -->
+<section class="w3-container w3-padding-64" id="seven">
+  <div class="w3-content w3-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;align-items:center">
+    <div>
+<h1>Vacuum</h1> 
+<h5 class="w3-padding-32"> 
+2025<br>canvas, oil<br>90x70 
+</h5> 
+<p class="w3-text-grey"> 
+This image conveys a feeling of overload and the inability to concentrate and absorb all the information 
+modern world, when the head is like an empty ball. 
+</p>
+    </div>
+    <div class="w3-center w3-card-4">
+<img src="1.webp" style="width:100%;cursor:zoom-in" onclick="document.getElementById('modal07').style.display='block'">
+
+<div id="modal07" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-white w3-container w3-padding-16 w3-display-topright">&nbsp;X&nbsp;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img src="1.webp" style="width:100%">
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+	<hr class="w3-opacity">
+	
+<!-- 8 Section -->
+<section class="w3-container w3-padding-64" id="eiht">  
+  <div class="w3-content w3-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;align-items:center">  
+     <div class="w3-center w3-card-4">
+<img src="va.webp" style="width:100%;cursor:zoom-in" onclick="document.getElementById('modal08').style.display='block'">
+
+<div id="modal08" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-white w3-container w3-padding-16 w3-display-topright">&nbsp;X&nbsp;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img src="va.webp" style="width:100%">
+  </div>
+</div>
+    </div>     
+    <div>
+<h1>Shelter</h1>
+<h5 class="w3-padding-32">2023<br>oil on canvas<br>80x60</h5>
+<p class="w3-text-grey">
+At the center of the painting stands the fragile figure of a child, facing away from the viewer and looking toward the light of hope.<br>
+The space surrounding the child resembles a tunnel, yet its walls are formed by the figures of soldiers. These defenders have become a living
+shield, protecting the child from the chaos and destructive force of war.<br>The oil brushstrokes highlight the contrast between the steadfast, stone-like resilience of the warriors
+and the fragility of childhood. <br>This work serves as a parable for a new understanding of "shelter"—where safety and the right to a future
+for an entire generation are provided by those who hold the front line. 
+</p>
+    </div>
+  </div>
+</section>
+	<hr class="w3-opacity">
+
+<!-- 9 Section -->
+<section class="w3-container w3-padding-64" id="nine">
+  <div class="w3-content w3-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;align-items:center">
+    <div>
+<h1>A Donkey Among Apples</h1>
+<h4>(He dreamed of being a dapple-grey horse)</h4>
+<h5 class="w3-padding-32">2025<br>oil on canvas<br>60x90</h5>
+<p class="w3-text-grey">
+This is not merely a donkey amidst apples—it is a representation of anyone who aspired to something greater, yet was left with only what they could manage to "chew."<br>
+It is an image of those who yearn to be someone else, but run up against the limitations of their own nature or the constraints imposed by the world. 
+</p>
+    </div>
+    <div class="w3-center w3-card-4">
+<img src="11.webp" style="width:100%;cursor:zoom-in" onclick="document.getElementById('modal09').style.display='block'">
+
+<div id="modal09" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-white w3-container w3-padding-16 w3-display-topright">&nbsp;X&nbsp;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img src="11.webp" style="width:100%">
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+	<hr class="w3-opacity">
+
+<!-- 10 Section -->
+<section class="w3-container w3-padding-64" id="ten">   <!--w3-light-grey-->
+  <div class="w3-content w3-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;align-items:center">
+    <div class="w3-center w3-card-4">
+<img src="12.jpeg" style="width:100%;cursor:zoom-in" onclick="document.getElementById('modal10').style.display='block'">
+
+<div id="modal10" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-white w3-container w3-padding-16 w3-display-topright">&nbsp;X&nbsp;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img src="12.jpeg" style="width:100%">
+  </div>
+</div>
+    </div>   
+    <div>
+<h1>Checkmate</h1>
+<h5 class="w3-padding-32">2023<br>oil on canvas<br>100x80</h5>
+<p class="w3-text-grey">
+The painting symbolizes a person's internal struggle. A figure on a chessboard, in a pose of despair, holds a crown—a sign of lost
+power. Toppled pieces, defeat, chaos. Children's drawings serve as a reminder of lost innocence.<br>Life is a game where victory does not always
+bring happiness. 
+</p>
+    </div>
+  </div>
+</section>
+	<hr class="w3-opacity">
+
+<!-- 11 Section -->
+<section class="w3-container w3-padding-64" id="ten1">
+  <div class="w3-content w3-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;align-items:center">
+    <div>
+<h1>The One Who Did Not Submit</h1>
+<h5 class="w3-padding-32">2025<br>oil on canvas<br>80x100</h5>
+<p class="w3-text-grey">
+The title of the painting highlights the strength of spirit of the central figure, who maintains his own stance amidst the crowd. It speaks to
+personal freedom, inner resilience, and a refusal to be part of a mass blindly heading somewhere.<br>The colors
+of the painting—a blue sky and yellow earth—evoke the Ukrainian flag, symbolizing peaceful skies and
+fertile land. This combination embodies the indomitability of the Ukrainian spirit: even amidst a torrent of hardships, there are those
+capable of thinking freely and choosing their own path. 
+</p>
+    </div>
+
+    <div class="w3-center w3-card-4">
+<img src="10.webp" style="width:100%;cursor:zoom-in" onclick="document.getElementById('modal11').style.display='block'">
+
+<div id="modal11" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-white w3-container w3-padding-16 w3-display-topright">&nbsp;X&nbsp;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img src="10.webp" style="width:100%">
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+	<hr class="w3-opacity">
+<!-- 12 Section -->
+<section class="w3-container w3-padding-64" id="ten2">   <!--w3-light-grey-->
+
+  <div class="w3-content w3-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;align-items:center">
+    <div class="w3-center w3-card-4">
+<img src="13.jpeg" style="width:100%;cursor:zoom-in" onclick="document.getElementById('modal12').style.display='block'">
+
+<div id="modal12" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-white w3-container w3-padding-16 w3-display-topright">&nbsp;X&nbsp;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img src="13.jpeg" style="width:100%">
+  </div>
+</div>
+    </div>
+    <div>
+<h1>Three "Nots" ...</h1>
+<h5 class="w3-padding-32">2023<br>oil on canvas<br>100x70</h5>
+<p class="w3-text-grey">
+This painting features a surreal theme: at its center is a head—wearing headphones and with a lock on its lips—encased within a cardboard box. 
+<br>It represents a person isolated from the world, deprived of the ability to speak or hear anything beyond the bounds of what is permitted. 
+Similar heads are scattered across a field of flowers, creating a paradox: life goes on, yet consciousness remains locked away. 
+This is a reflection on modern society, where individuality is often devalued and thought is standardized. 
+</p>
+    </div>
+  </div>
+</section>
+	<hr class="w3-opacity">
+<!-- Quote -->
+<section class="w3-content w3-padding-64" id="about">
+<div class="w3-grid" style="grid-template-columns:3fr">
+
+<div class="w3-container w3-center w3-card-2 w3-light-grey">
+<br>
+<h1>About Me and My Work</h1>
+<h4>
+My primary tools are color, compositional rhythms, and the texture of the brushstroke.
+Oil paints provide the plasticity and depth I need to capture the dynamics of human experiences—things often difficult to express in words.
+<br>The figures in my work are rarely portraits of specific individuals; rather, they serve as embodiments of human situations.
+By blending the serious with the ironic, I aim to leave space for the viewer to form their own interpretation and engage in a dialogue with the piece.
+<br>Works from 2024–2026
+</h4>
+<br><br>
+</div>
+
+<div class="w3-container w3-center">
+<div class="w3-panel w3-center">
+<p><i class="w3-serif w3-xlarge">
+<span style="font-size:150px;line-height:0.6em;opacity:0.2">✔</span>
+Art is the expression of the deepest thoughts<br>
+in the simplest way</i>
+</p>
+<tt class="w3-right ">Albert Einstein</tt>
+</div>
+<br>
+ </div>
+ 
+<div class="w3-container w3-center w3-card-2 w3-light-grey">
+<br>  
+<h1>Thematic Areas</h1>
+<ul class="w3-ul">
+<li class="w3-padding-16"><h4>The Individual and Society: Belonging, Resistance, and Mutual Support</h4></li>
+<li class="w3-padding-16"><h4>Inner States: Anxiety, Anticipation, Despair, and Resilience</h4></li>
+<li class="w3-padding-16"><h4>Social Irony: Power, Status, Stubbornness, and Self-Deception</h4></li>
+</ul>
+      <br>        
+ </div>
+  </div>
+</section>
+	<hr class="w3-opacity"> 
+   <!-- Contact Section -->      
+ <section class=" w3-content w3-padding-64" id="contact" > 
+   
+<div class="w3-row"> 
+ <div class="w3-col m4">   
+    <div class="w3-section w3-padding">
+    
+<h2>Contacts</h2>
+<h4>Kryvyi Rih, UKRAINE</h4>
+<h4>nazarenko.valia@gmail.com</h4>
+<center>            
+<a href="https://www.facebook.com/valentina.nazarenko.71536" title="My profile on Facebook" target="_blank">
+	<img src="face.jpg" width="40px" class="w3-image w3-circle">
+</a>       
+<a href="@acorn4196" title="My profile on Instagram" target="_blank">
+	<img src="inst.jpg" width="40px" class="w3-image w3-circle">
+</a> 
+<a href="cvE.pdf" title="My CV" target="_blank">
+	<img src="user.svg" width="42px" class="w3-image w3-circle">
+</a> 
+</center>             
+    </div>        
+  </div>
+  <div class="w3-col m8">   
+		<div id="map" class="w3-image w3-greyscale w3-paddin" style="width:100%;height:340pt"></div>
+<script>
+function myMap() {
+  var amsterdam = new google.maps.LatLng(47.917153,33.398916);
+
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: amsterdam, zoom: 7};
+  var map = new google.maps.Map(mapCanvas,mapOptions);
+
+  var myCity = new google.maps.Circle({
+    center: amsterdam,
+    radius: 100000,
+    strokeColor: "#000000",
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: "#000000",
+    mapTypeId: "satellite", // Устанавливаем вид со спутника
+    fillOpacity: 0.2
+  });
+  myCity.setMap(map);
+}
+</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHCIS6ZJuYHpYQraAEPtsQZtEgVOc_NJE&callback=myMap"></script> 
+  </div>   
+  <!-- End Contact Section -->
+  </div>  
+</section>
+	<hr class="w3-opacity">
+<!-- Footer -->
+<footer class="w3-center">
+    <p class="w3-medium">
+    	<tt>&copy; 2026 Valentyna Nazarenko from VovaN&Web</tt>
+    </p>
+</footer>
+
+<script>
+const mobileMenu = document.getElementById("navDemo");
+
+function myFunction() {
+  mobileMenu.classList.toggle("w3-show");
+}
+</script>
+
+
+<script>
+function openEN() {
+    window.close("indEN.html");
+}
+</script>
+
+</body>
+</html>
+
