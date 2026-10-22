@@ -446,13 +446,17 @@ in the simplest way</i>
 <center>            
 <a href="https://www.facebook.com/valentina.nazarenko.71536" title="My profile on Facebook" target="_blank">
 	<img src="face.jpg" width="40px" class="w3-image w3-circle">
-</a>       
+</a>&nbsp;&nbsp;&nbsp;&nbsp;       
 <a href="@acorn4196" title="My profile on Instagram" target="_blank">
 	<img src="inst.jpg" width="40px" class="w3-image w3-circle">
 </a> 
-<a href="cvE.pdf" title="My CV" target="_blank">
-	<img src="user.svg" width="42px" class="w3-image w3-circle">
-</a> 
+<dialog id="dal" style="border:none;">
+  <center><button class="w3-button w3-olive" onclick="dal.close()">Закрити вкладку</button></center><br>
+  <iframe src="cvE.pdf" height="500" width="900" style="border:none;" title="Iframe"></iframe>
+</dialog>
+<div class="w3-bar-item w3-button w3-hover-none" onclick="dal.showModal()">
+    <img src="user.svg" width="40px" class="w3-image w3-circle">
+</div>
 </center>             
     </div>        
   </div>
