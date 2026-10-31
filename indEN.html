@@ -9,8 +9,17 @@
 <meta property="og:title" content="ValyaAcorn | Painting">
 <meta property="og:description" content="Artist's portfolio with projects and contacts">
 <meta property="og:image" content="https://Nazar63844.github.io/pfl/pr1.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Marck+Script&display=swap" rel="stylesheet">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family:sans-serif}               
+body,h1,h2,h3,h4,h5,h6 {font-family:sans-serif} 
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+}             
 .w3-bar,h1,button {font-family:"Montserrat",sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
 
@@ -20,12 +29,10 @@ hr {
   background: linear-gradient(to right, transparent, #333, transparent);
 }
 </style>
-
 <body>
-
 <!-- Navbar -->
 <div class="w3-top">
-  <nav class="w3-flex w3-large w3-olive">    
+  <nav class="w3-flex w3-large w3-dark-grey">    
     <a href="#" class="w3-button w3-hover-none w3-hide-small" title="Artist's Portfolio">Home</a>  
 
 <div class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left" style="display:none" id="mySidebar">
@@ -45,7 +52,7 @@ hr {
 <a href="#ten2" class="w3-bar-item w3-button">Three Not...</a>
 
 </div>
-<button class="w3-button w3-olive w3-hover-none" onclick="w3_open()">My Paintings</button>      
+<button class="w3-button w3-dark-grey" onclick="w3_open()">My Paintings</button>      
 <script>
 function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
@@ -55,14 +62,14 @@ function w3_close() {
 }
 </script>
 
-    <a href="#about" class="w3-button w3-hide-small w3-hover-none">About me</a>          
-    <a href="#contact" class="w3-button w3-hide-small w3-hover-none">Contacts</a>        
-	 <a href="#" _target="self" onclick="openEN()" class="w3-bar-item w3-hover-olive w3-hover-text-black w3-button ">
+    <a href="#about" class="w3-button w3-hide-small ">About me</a>          
+    <a href="#contact" class="w3-button w3-hide-small ">Contacts</a>        
+	 <a href="#" _target="self" onclick="openEN()" class="w3-bar-item w3-hover-text-black w3-button ">
 	 	<img src="ua.svg" title="UA" style="width:24px"/>	
 	 </a>   
     
     <button
-    class="w3-button w3-hide-medium w3-hide-large w3-hover-olive w3-hover-text-black"
+    class="w3-button w3-hide-medium w3-hide-large w3-hover-text-black"
     style="margin-left:auto"
     onclick="myFunction()"
     title="Меню">
@@ -72,17 +79,17 @@ function w3_close() {
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-large" >
-    <a href="#" class="w3-bar-item w3-olive w3-hover-olive w3-hover-text-black w3-button w3-padding-large">Home</a>
-    <a href="#about" class="w3-bar-item w3-olive w3-hover-olive w3-hover-text-black w3-button w3-padding-large">About me</a>
-    <a href="#contact" class="w3-bar-item w3-olive w3-hover-olive w3-hover-text-black w3-button w3-padding-large">Contacts</a>
+    <a href="#" class="w3-bar-item w3-dark-grey w3-hover-text-black w3-button w3-padding-large">Home</a>
+    <a href="#about" class="w3-bar-item w3-dark-grey w3-hover-text-black w3-button w3-padding-large">About me</a>
+    <a href="#contact" class="w3-bar-item w3-dark-grey w3-hover-text-black w3-button w3-padding-large">Contacts</a>
   </div>
 </div>
 
 <!-- Header -->
-<header class="w3-container w3-olive w3-center" style="padding:128px 0px">              
-<h1 class="w3-xxlarge" style="font-family:sans-serif,Arial">VALENTYNA NAZARENKO</h1>   
+<header class="w3-container w3-dark-grey w3-center" style="padding:128px 0px">              
+<h1 class="great-vibes-regular">Валентина Назаренко</h1>   
         <img src="pr2.webp" style="width:30%;min-width:250px;" class="w3-padding w3-circle w3-greyscale">    
-    <p class="w3-xlarge">Painting – figurativeness – social and psychological metaphor</p>
+    <p class="w3-xlarge great-vibes-regular">Painting – figurativeness – social and psychological metaphor</p>
 </header>
 <!-- First Section -->
 <section class="w3-container w3-padding-64" id="one">
@@ -444,7 +451,7 @@ in the simplest way</i>
     
 <h2>Contacts</h2>
 <h4>Kryvyi Rih, UKRAINE</h4>
-<div class="w3-bar-block w3-olive" style="width:200px">    
+<div class="w3-bar-block w3-dark-grey" style="width:200px">    
 <a href="mailto:nazarenko.valia@gmail.com" title="Gmail" class="w3-border-bottom w3-bar-item w3-button w3-round">Gmail.com</a> 
 <a href="https://instagram.com" title="Instagram" rel="noopener noreferrer" target="_blank" class="w3-border-bottom w3-bar-item w3-button">
 @acorn4196
@@ -468,7 +475,6 @@ Facebook
     	<tt>&copy; 2026 Valentyna Nazarenko from VovaN&Web</tt>
     </p>
 </footer>
-
 <script>
 const mobileMenu = document.getElementById("navDemo");
 
@@ -476,14 +482,10 @@ function myFunction() {
   mobileMenu.classList.toggle("w3-show");
 }
 </script>
-
-
 <script>
 function openEN() {
     window.close("indEN.html");
 }
 </script>
-
-</body>
-</html>
+</body></html>
 
