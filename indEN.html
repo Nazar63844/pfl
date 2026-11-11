@@ -470,7 +470,7 @@ in the simplest way</i>
     <p class="w3-medium">
     	<tt>&copy; 2026 Valentyna Nazarenko from VovaN&Web</tt>
     </p>
-	<button id="scrollTopBtn1" class="scroll-top-btn" title="Вгору"><i class='fas'>&#xf077;</i></button>
+	<button id="scrollTopBtn2" class="scroll-top-btn" title="Вгору"><i class='fas'>&#xf077;</i></button>
 </footer>
 <script>
 const mobileMenu = document.getElementById("navDemo");
@@ -485,16 +485,16 @@ function openEN() {
 }
 </script>
 <script>
-const scrollTopBtn1 = document.getElementById('scrollTopBtn1');
+const scrollTopBtn2 = document.getElementById('scrollTopBtn2');
 window.addEventListener('scroll', () => {
   // Показываем кнопку, если прокрутка больше 300px
   if (window.scrollY > 300) {
-    scrollTopBtn1.classList.add('show');
+    scrollTopBtn2.classList.add('show');
   } else {
-    scrollTopBtn1.classList.remove('show');
+    scrollTopBtn2.classList.remove('show');
   }
 });
-scrollTopBtn1.addEventListener('click', () => {
+scrollTopBtn2.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
