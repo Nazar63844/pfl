@@ -9,6 +9,7 @@
 <meta property="og:title" content="ValyaAcorn | Painting">
 <meta property="og:description" content="Artist's portfolio with projects and contacts">
 <meta property="og:image" content="https://Nazar63844.github.io/pfl/pr1.webp">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <style>
 html {scroll-behavior: smooth;}
 body,h1,h2,h3,h4,h5,h6 {font-family:sans-serif}             
@@ -18,6 +19,38 @@ hr {
   border: none;
   height: 2px;
   background: linear-gradient(to right, transparent, #333, transparent);
+}
+.scroll-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.scroll-top-btn:hover {
+  background-color: #0056b3;
+}
+/* Класс, который добавляет JavaScript для показа кнопки */
+.scroll-top-btn.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 </style>
 <body>
@@ -437,6 +470,7 @@ in the simplest way</i>
     <p class="w3-medium">
     	<tt>&copy; 2026 Valentyna Nazarenko from VovaN&Web</tt>
     </p>
+	<button id="scrollTopBtn1" class="scroll-top-btn" title="Вгору"><i class='fas'>&#xf077;</i></button>
 </footer>
 <script>
 const mobileMenu = document.getElementById("navDemo");
@@ -449,6 +483,23 @@ function openEN() {
     // window.close("indEN.html");
 	location.replace("index.html");
 }
+</script>
+<script>
+const scrollTopBtn1 = document.getElementById('scrollTopBtn1');
+window.addEventListener('scroll', () => {
+  // Показываем кнопку, если прокрутка больше 300px
+  if (window.scrollY > 300) {
+    scrollTopBtn1.classList.add('show');
+  } else {
+    scrollTopBtn1.classList.remove('show');
+  }
+});
+scrollTopBtn1.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
 </script>
 </body></html>
 
