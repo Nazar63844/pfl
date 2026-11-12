@@ -88,7 +88,7 @@ function w3_close() {
 </script>
     <a href="#about" class="w3-button w3-hide-small">Про мене</a>          
     <a href="#contact" class="w3-button w3-hide-small">Контакти</a>        
-	<a href="#" onclick="openEN()" class="w3-bar-item w3-hover-text-black w3-button ">EN</a>      
+	<a href="indEN.html" class="w3-bar-item w3-hover-text-black w3-button ">EN</a>      
     <button
     class="w3-button w3-hide-medium w3-hide-large w3-hover-text-black"
     style="margin-left:auto"
@@ -481,13 +481,7 @@ function myFunction() {
 }
 </script>
 <script>
-function openEN() {
-	location.replace("indEN.html");
-}
-</script>
-<script>
 const scrollTopBtn1 = document.getElementById('scrollTopBtn1');
-
 window.addEventListener('scroll', () => {
   // Показываем кнопку, если прокрутка больше 300px
   if (window.scrollY > 300) {
@@ -496,14 +490,12 @@ window.addEventListener('scroll', () => {
     scrollTopBtn1.classList.remove('show');
   }
 });
-
 scrollTopBtn1.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
   });
 });
-
 </script>
 </body></html>
 
